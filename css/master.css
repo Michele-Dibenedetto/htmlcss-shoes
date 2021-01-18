@@ -8,42 +8,71 @@
 html {
   scroll-behavior: smooth;
 }
-
-.nav_container {
+/*inizio menu di navigazione */
+nav {
   position: fixed;
   top: 0;
-  right: 0;
-  width: 20%;
-  height: 70px;
+  width: 100%;
+  height: 60px;
   z-index: 5;
-  padding-left: 3%;
+}
+.nav_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 40px;
+  list-style: none;
+  line-height: 60px;
+  text-align: right;
+}
+.nav_container li {
+  display: inline-block;
+  margin: 0 20px;
 }
 .nav_shoes {
   display: inline-block;
-  margin: 5% 5% 0;
-  padding: 6%;
   width: 50px;
   height: 50px;
   background-color: white;
-  text-align: center;
   border-radius: 100px;
+  line-height: 50px;
+  text-align: center;
   text-decoration: none;
+  font-weight: 900;
+  color: black;
 }
 .nav_shoes:hover {
   box-shadow: 1px 4px 5px black;
 }
-
-.container {
+/* fine menu di navigazione */
+/* inizio sezione scarpe */
+section {
   position: relative;
   width: 100%;
   height: 100vh;
 }
-.container.red{
+.container {
+  position: absolute;
+  top: 5%;
+  right: 21%;
+}
+#red{
   background-color: red;
 }
-.container.green {
+#green {
   background-color: green;
 }
-.container.yellow {
+#yellow {
   background-color: yellow;
 }
+p {
+  text-align: center;
+  color: yellow;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.text_green {
+  color: green;
+}
+/* fine sezione scarpe */
